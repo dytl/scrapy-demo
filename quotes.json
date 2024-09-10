@@ -1,0 +1,14 @@
+CREATE TABLE `sbzx_shebao_repayment_personnel` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `rp_id` int(11) NOT NULL DEFAULT '0' COMMENT '社保补缴ID',
+  `name` varchar(10) DEFAULT '' COMMENT '补缴人员姓名',
+  `idcard` varchar(20) DEFAULT NULL COMMENT '身份证号',
+  `range_stime` int(11) DEFAULT NULL COMMENT '补缴时间段-开始时间',
+  `range_etime` int(11) DEFAULT NULL COMMENT '补缴时间段-结束时间',
+  `situation` varchar(50) DEFAULT NULL COMMENT '核实情况',
+  `verification_time` int(11) DEFAULT NULL COMMENT '核实时间',
+  `remark` varchar(50) DEFAULT NULL COMMENT '备注',
+
+  `add_time` int(11) DEFAULT NULL COMMENT '创建时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='社保中心-社保补缴';
