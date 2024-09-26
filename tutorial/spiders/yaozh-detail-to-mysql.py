@@ -12,10 +12,10 @@ class YaohuiSpider(scrapy.Spider):
     # Initialize database connection
     def __init__(self):
         self.connection = mysql.connector.connect(
-            host='39.107.138.72',  # Update with your MySQL host
-            user='root',  # Update with your MySQL username
-            password='477ba090e70cd6a0',  # Update with your MySQL password
-            database='tasksystem'  # Update with your MySQL database name
+            host='',  # Update with your MySQL host
+            user='',  # Update with your MySQL username
+            password='',  # Update with your MySQL password
+            database=''  # Update with your MySQL database name
         )
         self.cursor = self.connection.cursor()
 
